@@ -3,13 +3,13 @@ function loadHeader() {
   const width = window.innerWidth;
 
   if (width >= 1024) {
-    fetch("/Componentes/Desktop/header.html")
+    fetch("/Web-y-Componentes/Componentes/Desktop/header.html")
       .then((response) => response.text())
       .then((data) => {
         headerContainer.innerHTML = data;
       });
   } else {
-    fetch("/Componentes/Mobile/header.html")
+    fetch("/Web-y-Componentes/Componentes/Mobile/header.html")
       .then((response) => response.text())
       .then((data) => {
         headerContainer.innerHTML = data;
@@ -22,13 +22,13 @@ function loadFooter() {
   const width = window.innerWidth;
 
   if (width >= 1024) {
-    fetch("/Componentes/Desktop/footer.html")
+    fetch("/Web-y-Componentes/Componentes/Desktop/footer.html")
       .then((response) => response.text())
       .then((data) => {
         headerContainer.innerHTML = data;
       });
   } else {
-    fetch("/Componentes/Mobile/footer.html")
+    fetch("/Web-y-Componentes/Componentes/Mobile/footer.html")
       .then((response) => response.text())
       .then((data) => {
         headerContainer.innerHTML = data;
@@ -49,7 +49,7 @@ window.onresize = function () {
 function buttonEnviar() {
   const buttonContainer = document.querySelector(".button-enviar");
 
-  fetch("/Componentes/Boton/boton.html")
+  fetch("/Web-y-Componentes/Componentes/Boton/boton.html")
     .then((response) => response.text())
     .then((data) => {
       const template = document.createElement("template");
