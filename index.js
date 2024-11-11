@@ -3,7 +3,7 @@ function loadHeader() {
   const width = window.innerWidth;
 
   if (width >= 1024) {
-    fetch("/Componentes/Desktop/header.html")
+    fetch("/Web-y-Componentes/Componentes/Desktop/header.html")
       .then((response) => response.text())
       .then((data) => {
         headerContainer.innerHTML = data;
