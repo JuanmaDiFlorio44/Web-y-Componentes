@@ -9,7 +9,7 @@ function loadHeader() {
         headerContainer.innerHTML = data;
       });
   } else {
-    fetch("/Componentes/Mobile/header.html")
+    fetch("/Web-y-Componentes/Componentes/Mobile/header.html")
       .then((response) => response.text())
       .then((data) => {
         headerContainer.innerHTML = data;
@@ -22,13 +22,13 @@ function loadFooter() {
   const width = window.innerWidth;
 
   if (width >= 1024) {
-    fetch("/Componentes/Desktop/footer.html")
+    fetch("/Web-y-Componentes/Componentes/Desktop/footer.html")
       .then((response) => response.text())
       .then((data) => {
         headerContainer.innerHTML = data;
       });
   } else {
-    fetch("/Componentes/Mobile/footer.html")
+    fetch("/Web-y-Componentes/Componentes/Mobile/footer.html")
       .then((response) => response.text())
       .then((data) => {
         headerContainer.innerHTML = data;
@@ -173,7 +173,7 @@ MyService();
 function loadCard() {
   const cardContainer = document.querySelector(".servicios-card");
 
-  fetch("/Componentes/Card/card.html")
+  fetch("/Web-y-Componentes/Componentes/Card/card.html")
     .then((response) => response.text())
     .then((data) => {
       const template = document.createElement("template");
